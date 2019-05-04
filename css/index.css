@@ -47,6 +47,18 @@ table {
 	border-spacing: 0;
 }
 
+@keyframes navhover{
+    from{
+        
+    }
+    to{
+        font-size: 20px;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -148,10 +160,13 @@ footer nav a {
 header{
     display: flex;
     width: 100%;
+    height: 5vh;
     align-items: baseline;
     margin-bottom: 45px;
 }
 header nav{
+    position: relative;
+    top: 10px;
     margin-left: 5%;
     display: flex;
     justify-content:  space-between;
@@ -159,10 +174,20 @@ header nav{
 }
 
 header nav a{
-    margin-right: 20px;
     text-decoration: none;
     color:black;
     font-weight: bold;
+    width:100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 35px;
+}
+
+header nav a:hover{
+    animation-name: navhover;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }
 
 .jumbo{
@@ -254,6 +279,7 @@ header nav a{
     border-style: solid;
     border-color: black;
     border-radius: 7px;
+    border-width: 1px;
     padding: 5px 10px 5px 10px;
     font-size: 12px;
     margin-bottom: 10px;
