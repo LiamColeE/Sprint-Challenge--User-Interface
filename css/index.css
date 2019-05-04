@@ -53,7 +53,7 @@ table {
     }
     to{
         font-size: 20px;
-        border-width: 2px;
+        border-width: 1px;
         border-style: solid;
         border-radius: 10px;
     }
@@ -164,6 +164,7 @@ header{
     align-items: baseline;
     margin-bottom: 45px;
 }
+
 header nav{
     position: relative;
     top: 10px;
@@ -180,8 +181,7 @@ header nav a{
     width:100px;
     height: 40px;
     text-align: center;
-    vertical-align: bottom;
-    line-height: 35px;
+    line-height: 37px;
 }
 
 header nav a:hover{
