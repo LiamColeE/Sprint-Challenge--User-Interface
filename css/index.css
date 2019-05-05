@@ -47,6 +47,18 @@ table {
 	border-spacing: 0;
 }
 
+@keyframes navhover{
+    from{
+        
+    }
+    to{
+        font-size: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -143,4 +155,149 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    align-items: baseline;
+    margin-bottom: 45px;
+}
+
+header nav{
+    position: relative;
+    top: 10px;
+    margin-left: 5%;
+    display: flex;
+    justify-content:  space-between;
+    width: 80%;
+}
+
+header nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    width:100px;
+    height: 40px;
+    text-align: center;
+    line-height: 37px;
+}
+
+header nav a:hover{
+    animation-name: navhover;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.jumbo{
+    margin-bottom: 20px;
+}
+
+ .box:nth-child(1){
+    background-color: teal !important;
+ }
+
+ .box:nth-child(2){
+    background-color: gold !important;
+ }
+
+ .box:nth-child(3){
+     background-color: cadetblue !important;
+ }
+
+ .box:nth-child(4){
+    background-color: coral !important;
+}
+
+.box:nth-child(5){
+    background-color: crimson !important;
+}
+
+.box:nth-child(6){
+    background-color: forestgreen !important;
+}
+
+.box:nth-child(7){
+    background-color: darkorchid !important;
+}
+
+.box:nth-child(8){
+    background-color: hotpink !important;
+}
+
+.box:nth-child(9){
+    background-color: indigo !important;
+}
+.box:nth-child(10){
+    background-color: dodgerblue !important;
+}
+
+/* About Page CSS */
+.dotted{
+    border-style: dashed;
+    padding:0px;
+}
+
+.about-section{
+    margin: 40px auto 20px auto;
+    width: 98%;
+
+}
+.container .about-page{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.content-section{
+    width: 98%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.content-section section{
+    width: 50%;
+    margin-top: 25px;
+}
+
+.content-section section h2{
+    margin-top: 10px;
+    font-size: 16px
+}
+
+.content-section section p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.content-section section button{
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 7px;
+    border-width: 1px;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.content-section section button:hover{
+    cursor: pointer;
+}
+
+.content-section section .dotted{
+    width: 95%;
+    margin-left: 0px;
+}
+
+.pre-footer{
+    display: block;
+    margin-bottom: 40px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
 }
